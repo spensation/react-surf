@@ -5,7 +5,7 @@ const Spots = (props) => {
 	console.log(props)
 	const { surfSpots } = props;
 	const renderSpots = surfSpots.map((spot, index) =>
-		<div key={index}>
+		<div className="surf-spots" key={index}>
 			<hr/>
 			<h3>{spot.county_name} County</h3>
 			<p>Lat: {spot.latitude}</p>

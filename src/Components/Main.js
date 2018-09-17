@@ -4,7 +4,7 @@ import image from '../Assets/Images/p59_spot.jpg';
 const Main = () => {
 	return(
 		<div className="landing">
-			<img src={image} alt=''/>
+			<img id="surfer-pic" src={image} alt='surfer'/>
 		</div>
 	)
 }
