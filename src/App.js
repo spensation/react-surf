@@ -6,6 +6,7 @@ import Navbar from './Components/Navbar';
 import Spots from './Components/Spots';
 import PopularSpots from './Components/PopularSpots';
 import ByCounty from './Components/ByCounty';
+import SinglePage from './Components/SinglePage'
 import { BrowserRouter, Route } from 'react-router-dom';
 import { surfSpots, counties } from './data.js';
 
@@ -29,6 +30,10 @@ class App extends Component {
             <Route 
               exact path="/by_county"
               render={(props) => <ByCounty {...props} counties={counties} />}
+            />
+            <Route 
+              exact path={`/surf_spots/:spot_id`} 
+              render={(props) => <SinglePage {...props} surfSpots={surfSpots} />}
             />
           </div>
         </BrowserRouter>

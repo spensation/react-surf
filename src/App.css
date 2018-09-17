@@ -15,3 +15,34 @@
 .navbar {
   margin: 2em 2em;
 }
+
+p {
+	display: none;
+}
+
+hr {
+	width: 30%;
+}
+
+.county-button {
+	font-size: 1.4em;
+	background-color: azure;
+	border-radius: 6px;
+	color: blue;
+}
+
+.county-list {
+	width: 25%;
+	text-align: left;
+	margin: auto;
+}
+
+.description {
+	display: block;
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	margin-top: 3em;
+}
+
+
